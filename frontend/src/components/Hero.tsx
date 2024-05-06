@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <div className="bg-rose-900 pb-16 ">
+        <div className="bg-rose-800 pb-16 ">
             <div className="container mx-auto flex flex-col gap-2">
                 <h1 className="text-5xl text-white font-bold">
                     Find your next stay

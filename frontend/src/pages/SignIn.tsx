@@ -40,7 +40,7 @@ const SignIn = () => {
             <h2 className="text-4xl font-bold text-slate-700 mb-3">Sign In</h2>
             <label className="text-gray-700 text-md font-bold flex-1">
                 Email
-                <input type="email" className="border rounded w-full py-1 px-2 font-normal" {...register("email", { required: "This field is required!" })}></input>
+                <input type="email" className="border rounded w-full py-1 px-2 font-medium text-rose-800" {...register("email", { required: "This field is required!" })}></input>
                 {errors.email && (
                         <span className="text-red-600 text-sm">
                             {errors.email.message}
@@ -49,7 +49,7 @@ const SignIn = () => {
             </label>
             <label className="text-gray-700 text-md font-bold flex-1">
                 Password
-                <input type="password" className="border rounded w-full py-1 px-2 font-normal" {...register("password", 
+                <input type="password" className="border rounded w-full py-1 px-2 font-medium text-rose-800" {...register("password", 
                     { required: "This field is required!", 
                     minLength: { 
                         value: 6, message: "Password must be at least 6 characters." 
@@ -62,9 +62,9 @@ const SignIn = () => {
             </label>
             <span className="flex items-center justify-between">
                 <span className="text-sm font-semibold text-slate-700">
-                    Not Registered? <Link to="/register" className="underline underline-offset-2 text-rose-700">Create an account here.</Link>
+                    Not Registered? <Link to="/register" className="underline underline-offset-2 text-rose-800">Create an account here.</Link>
                 </span>
-                <button type="submit" className="bg-rose-700 text-white px-3 py-1 font-bold hover:bg-rose-600 text-sm cursor-pointer rounded-sm border-none shadow-sm">Login</button>
+                <button type="submit" className="bg-rose-800 text-white px-3 py-1 font-bold hover:bg-rose-600 text-sm cursor-pointer rounded-sm border-none shadow-sm">Login</button>
             </span>
         </form>
     )
