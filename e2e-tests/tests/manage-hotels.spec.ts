@@ -10,7 +10,7 @@ test.beforeEach(async ({ page }) => {
     await page.locator("[name=email]").fill("1@1.com");
     await page.locator("[name=password]").fill("password123");
     await page.getByRole("button", { name: "Login" }).click();
-    await page.waitForSelector("text=Sign in Successful!");
+    await page.waitForSelector("Sign in Succesful!");
 });
 
 test("should allow user to add a hotel", async ({ page }) => {

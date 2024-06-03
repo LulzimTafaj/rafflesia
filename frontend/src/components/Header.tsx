@@ -13,7 +13,7 @@ const Header = () => {
                     Rafflesia
                     </Link>
                 </span>
-                <span className="flex space-x-2 text-white md:my-2">
+                <span className="flex space-x-2 text-white">
                     {isLoggedIn ? <>
                         <Link className="flex items-center text-white px-3 font-semibold hover:bg-rose-800 rounded-sm hover:cursor-pointer" to="/my-bookings">
                             My Bookings
